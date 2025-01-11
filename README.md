@@ -48,7 +48,7 @@ to get
 BONUS FEATURES
 ==============
 
-    Also included: C<Pod::To::Raku::Plus> and C<find-raku-module>.
+Also included: `Pod::To::Raku::Plus` and `find-raku-module`.
 
 Use Raku::Plus to get the pod with the line number and filename:
 
