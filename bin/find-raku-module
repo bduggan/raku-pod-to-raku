@@ -26,7 +26,7 @@ for @found -> $f {
       for %m.kv -> $k, $v {
         my $file = $c.content($k).path;
         %m<file> = $file.Str;
-        #%data{$p}{$k} = $file.Str;
+        %data{$p}{$k} = $file.Str;
       }
       %data<provides>.push: %m;
     }

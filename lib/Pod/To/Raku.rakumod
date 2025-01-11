@@ -76,26 +76,29 @@ Use C<find-raku-module> to find the location of the module in the filesystem:
 
 yields
 
-		{
-			"provides": [
-				{
-					"lib/JSON/Fast.pm6": {
-						"time": null,
-						"file": "F13CDD097310A0775131666979B65ADF692574DD"
-					},
-					"file": "/home/.../moar-2024.12/share/perl6/site/sources/F13CDD097310A0775131666979B65ADF692574DD"
-				}
-			],
-			"meta": {
-				"auth": "cpan:TIMOTIMO",
-				"checksum": "A498E97EDAC5D22E53386172C9A3EA5670411BCD",
-				"api": "0",
-				"ver": "0.19",
-				"source": "F13CDD097310A0775131666979B65ADF692574DD"
-			},
-			"description": "A naive, fast json parser and serializer; drop-in replacement for JSON::Tiny",
-			"repo-id": "inst"
-		}
+	{
+		"repo-id": "inst",
+		"provides": [
+			{
+				"lib/JSON/Fast.pm6": {
+					"file": "F13CDD097310A0775131666979B65ADF692574DD",
+					"time": null
+				},
+				"file": "...moar-2024.12/share/perl6/site/sources/F13CDD097310A0775131666979B65ADF692574DD"
+			}
+		],
+		"meta": {
+			"ver": "0.19",
+			"source": "F13CDD097310A0775131666979B65ADF692574DD",
+			"auth": "cpan:TIMOTIMO",
+			"api": "0",
+			"checksum": "A498E97EDAC5D22E53386172C9A3EA5670411BCD"
+		},
+		"JSON::Fast": {
+			"lib/JSON/Fast.pm6": "...moar-2024.12/share/perl6/site/sources/F13CDD097310A0775131666979B65ADF692574DD"
+		},
+		"description": "A naive, fast json parser and serializer; drop-in replacement for JSON::Tiny"
+	}
 
 =head1 SEE ALSO
 
