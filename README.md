@@ -50,7 +50,7 @@ BONUS FEATURES
 
 Also included: `Pod::To::Raku::Plus` and `find-raku-module`.
 
-Use Raku::Plus to get the pod with the line number and filename:
+Use `Raku::Plus` to add the file and line to `WHEREFORE`:
 
     raku --doc=Raku::Plus add.raku
 
@@ -59,7 +59,7 @@ which yields
     $[
       Pod::Block::Declarator.new(
           WHEREFORE => {
-              :file("eg/in.raku"),
+              :file("add.raku"),
               :line(2),
               :name("add"),
               :sig(:($a, $b))
@@ -67,7 +67,7 @@ which yields
          leading => [["add two numbers"],], trailing => [], config => {}, contents => [])
       ]
 
-Use `find-raku-module` to find the location of the module in the filesystem:
+Use `find-raku-module` to get some metadata (including filenames) for a module:
 
     find-raku-module JSON::Fast
 
