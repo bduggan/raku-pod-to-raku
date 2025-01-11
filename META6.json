@@ -3,8 +3,7 @@
     "Brian Duggan"
   ],
   "build-depends" : [ ],
-  "depends" : [
-  ],
+  "depends" : [ ],
   "description" : "Extract Pod into standalone Raku",
   "license" : "MIT",
   "name" : "Pod::To::Raku",
@@ -15,7 +14,8 @@
     "find-raku-module" : "bin/find-raku-module"
   },
   "resources" : [ ],
-  "source-url" : "",
+  "auth" : "zef:bduggan",
+  "source-url" : "git://github.com/bduggan/raku-pod-to-raku.git",
   "tags" : [ ],
   "test-depends" : [ ],
   "version" : "0.0.1"
