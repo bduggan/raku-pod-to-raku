@@ -11,7 +11,8 @@
   "raku" : "6.*",
   "provides" : {
     "Pod::To::Raku" : "lib/Pod/To/Raku.rakumod",
-    "Pod::To::Raku::Plus" : "lib/Pod/To/Raku/Plus.rakumod"
+    "Pod::To::Raku::Plus" : "lib/Pod/To/Raku/Plus.rakumod",
+    "find-raku-module" : "bin/find-raku-module"
   },
   "resources" : [ ],
   "source-url" : "",
