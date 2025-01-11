@@ -1,0 +1,21 @@
+{
+  "authors" : [
+    "Brian Duggan"
+  ],
+  "build-depends" : [ ],
+  "depends" : [
+  ],
+  "description" : "Dump pod as raku code",
+  "license" : "Artistic-2.0",
+  "name" : "Pod::To::Raku",
+  "raku" : "6.*",
+  "provides" : {
+    "Pod::To::Raku" : "lib/Pod/To/Raku.rakumod",
+    "Pod::To::Raku::Plus" : "lib/Pod/To/Raku/Plus.rakumod"
+  },
+  "resources" : [ ],
+  "source-url" : "",
+  "tags" : [ ],
+  "test-depends" : [ ],
+  "version" : "0.0.1"
+}

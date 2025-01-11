@@ -1,0 +1,6 @@
+#raku
+
+use Test;
+
+use-ok 'Pod::To::Raku';
+

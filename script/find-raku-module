@@ -1,0 +1,37 @@
+#!/usr/bin/env raku
+
+unit sub MAIN ($module!);
+use JSON::Fast;
+
+my @found;
+my @repos = $*REPO.repo-chain.grep(CompUnit::Repository::Installation);
+for @repos -> $repo {
+  my @installed = $repo.installed.grep(*.defined);
+  for @installed {
+    with .meta<provides>{ $module } {
+      @found.push: %( :repo($repo), :module($_) );
+    }
+  }
+}
+my $file;
+my %data;
+for @found -> $f {
+  %data<repo-id> = $f<repo>.short-id;
+  for $f<repo>.candidates($module) -> $c {
+    %data<meta> = $c.meta;
+    %data<description> = $c.meta<description>;
+    %data<provides> = [];
+    for $c.meta<provides>.keys.sort -> $p {
+      my %m := $c.meta<provides>{$p};
+      for %m.kv -> $k, $v {
+        my $file = $c.content($k).path;
+        %m<file> = $file.Str;
+        #%data{$p}{$k} = $file.Str;
+      }
+      %data<provides>.push: %m;
+    }
+  }
+}
+
+put to-json(%data);
+

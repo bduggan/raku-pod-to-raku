@@ -1,0 +1,14 @@
+=begin pod :kind("Type") :subkind("class") :category("domain-specific")
+
+=TITLE class Supply
+
+=SUBTITLE Asynchronous data stream with multiple subscribers
+
+=head2 method rotor
+
+    method rotor(Supply:D: @cycle --> Supply:D)
+
+Creates a "rotoring" supply with the same semantics as L<List.rotor|/type/List#method_rotor>.
+
+=end pod
+
