@@ -3,7 +3,9 @@
     "Brian Duggan"
   ],
   "build-depends" : [ ],
-  "depends" : [ ],
+  "depends" : [
+    "JSON::Fast"
+  ],
   "description" : "Extract Pod into standalone Raku",
   "license" : "MIT",
   "name" : "Pod::To::Raku",
