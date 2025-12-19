@@ -1,3 +1,6 @@
+0.0.4 2025-12-19
+  - add JSON::Fast since a bin/ script needs it
+
 0.0.3 2025-04-28
   - fix test
   - add example
